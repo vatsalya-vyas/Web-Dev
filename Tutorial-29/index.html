@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 315px;
+            height: 500px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        img {
+            width: 295px;
+            height: 230px;
+            border: 10px solid #fff;
+            border-radius: 7%;
+        }
+
+        .text-container {
+            display: flex;
+            justify-content: flex-start;
+            width: 90%;
+        }
+
+        .p1,
+        .p2 {
+            font-size: 12px;
+            font-family: sans-serif;
+            color: rgb(123, 123, 123);
+            border: 1px solid rgb(217, 214, 214);
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 8px;
+            padding: 6px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        .text-container2 {
+            font-family: sans-serif;
+            margin-right: 120px;
+            margin-top: 4px;
+        }
+
+        .text {
+            font-family: sans-serif;
+            color: #9a9797;
+            margin-left: 14px;
+            margin-right: 20px;
+            margin-top: 1px;
+        }
+
+        .text2 {
+            font-size: 12px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: rgb(0, 119, 255);
+            border: 1px solid rgba(61, 145, 248, 0.18);
+            background-color: rgba(61, 145, 248, 0.18);
+            padding: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="Card-Image.png" alt="Card Image">
+        <div class="text-container">
+            <p class="p1">
+                Nature
+            </p>
+            <p class="p2">
+                Lake
+            </p>
+        </div>
+        <h2 class="text-container2">Lago di Braies</h2>
+        <p class="text">
+            Lorem ipsum dolor sit amet. consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam
+            pharetra vitae ipsum odio.
+        </p>
+        <p class="text2">
+            Read More
+        </p>
+    </div>
+</body>
+
+</html>
