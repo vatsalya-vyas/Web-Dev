@@ -4,16 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Navbar</title>
+    <style>
+        .logo_container {
+            display: flex;
+            align-items: center;
+            padding: 10px 0px;
+        }
+
+        .logo_helper {
+            flex: 0.1;
+        }
+
+        .nav {
+            position: relative;
+            padding: 0px 10px;
+            text-align: right;
+            display: flex;
+            align-items: center;
+            margin-right: 50px;
+        }
+
+        .nav::after {
+            content: '˯';
+            position: absolute;
+            top: -70%;
+            transform: translateY(-50%);
+            font-size: 3em;
+            font-family: sans-serif;
+            color: #333;
+            right: -20%;
+        }
+
+        .nav-bar {
+            flex: 0.8;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 15px;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .img {
+            flex: 0.1;
+        }
+        .nav:hover::after {
+            color: #636262; /* Change to the color you want on hover */
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+    </style>
 </head>
 
 <body>
-    <!-- Design this website's Navbar Using Flexbox -->
-
-    <a
-        href="https://www.ultraedit.com/downloads/ultraedit-download-thank-you/?utm_source=CWH&utm_medium=LeadsAcquisition&utm_content=UEDownload&utm_campaign=UETrialDownload">Ultra
-        Edit</a>
-
+    <header class="main-header">
+        <div class="container">
+            <div class="logo_container">
+                <span class="logo_helper"></span>
+                <a href="https://www.ultraedit.com/">
+                    <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="UltraEdit"
+                        height="60px" width="180px">
+                </a>
+                <div class="nav-bar">
+                    <div class="nav">
+                        Product
+                    </div>
+                    <div class="nav">
+                        Pricing
+                    </div>
+                    <div class="nav">
+                        Resources
+                    </div>
+                    <div class="nav">
+                        About us
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="Screenshot 2023-11-14 152634.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
