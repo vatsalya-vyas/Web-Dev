@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Animation</title>
     <style>
-        .box {
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-300px);
+            }
+        }
+
+
+        .ball {
             height: 121px;
             width: 121px;
             background-color: red;
@@ -14,8 +25,9 @@
             position: absolute;
             bottom: 0;
             left: 0;
+            animation: bounce 1s linear(0 0%, 0.85 57.65%) infinite alternate;
         }
-
+        
         .container {
             position: relative;
             height: 80vh;
@@ -28,12 +40,9 @@
 <body>
     <div class="container">
 
-        <div class="box">
+        <div class="ball">
         </div>
     </div>
-    <!-- 
-    Design a bouncing ball animation using CSS
-     -->
 </body>
 
 </html>
